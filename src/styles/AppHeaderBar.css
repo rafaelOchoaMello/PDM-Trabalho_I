@@ -1,0 +1,38 @@
+#appHeaderBar{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,41,1) 99%, rgba(9,16,126,1) 100%, rgba(5,95,178,1) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,41,1) 99%, rgba(9,16,126,1) 100%, rgba(5,95,178,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,41,1) 99%, rgba(9,16,126,1) 100%, rgba(5,95,178,1) 100%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00d4ff",GradientType=1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img{
+    max-width: 350px;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 768px){
+    #appHeaderBar{
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 359px){
+    #appHeaderBar{
+        display: flex;
+        flex-flow: column;
+    }
+    img{
+        display: none;
+    }
+}
