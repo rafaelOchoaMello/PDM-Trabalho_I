@@ -11,7 +11,7 @@ const FormCard = forwardRef(({atualiza, lista}, ref) => {
 
   // salva os dados na inclusão
   const onSubmit = (data) => {
-
+    NotificationsAlert("success", "Sucesso!", "Nova carta registrada com exito!");
     // acrescenta um novo atributo aos dados enviados a partir do formulário
     data.id = new Date().getTime();
     console.log(data);
@@ -71,7 +71,7 @@ const FormCard = forwardRef(({atualiza, lista}, ref) => {
 
     setAlterar(false);
 
-    NotificationsAlert("success", "Atenção!", "Carta atualizada com sucesso");
+    NotificationsAlert("info", "Atenção!", "Carta atualizada com sucesso");
   }
 
   // faz a desestruturação do objeto recebido
@@ -155,7 +155,7 @@ const FormCard = forwardRef(({atualiza, lista}, ref) => {
           <input
             type="submit"
             className={alterar ? "d-none" : "btn btn-primary"}
-            value="Adicionar"
+            value="Adicionar"    
           />
           <input
             type="submit"

@@ -3,15 +3,15 @@ import { NotificationManager } from "react-notifications";
 const NotificationsAlert = (type, title, subtitle="") => {
   switch (type) {
     case "info":
-      NotificationManager.info("Info message");
+      NotificationManager.info(subtitle, title);
       break;
     case "success":
       NotificationManager.success(subtitle, title);
-      break;
+      break;    
     case "warning":
       NotificationManager.warning(
-        "Warning message",
-        "Close after 3000ms",
+        subtitle,
+        title,
         3000
       );
       break;
